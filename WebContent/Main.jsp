@@ -15,7 +15,7 @@
 		
 		<a href = "Login.jsp">로그인</a>
 			
-		<form method = "post" action = "Register.jsp">
+		<form method = "post" action = "member/view/RegisterForm.jsp">
 			<input type = "submit" name = "register" value = "회원 가입">
 		
 		</form>
