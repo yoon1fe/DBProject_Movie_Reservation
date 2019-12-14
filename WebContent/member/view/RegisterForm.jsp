@@ -4,7 +4,21 @@
 <html>
 	<head>
 		<meta charset="EUC-KR">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>CDB 회원가입</title>
+		<link rel="stylesheet" href="../../css/bootstrap.css">
+		<style type="text/css">
+        	body{
+            	background-color: #e6dfc0;
+        	}
+        	h1{
+        		text-shadow:-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+        	}
+        	#div1{
+            	background-color: #dc3232;
+            	padding: 10px;
+        	}
+    	</style>
     <script type="text/javascript">
     
         // 필수 입력정보인 아이디, 비밀번호가 입력되었는지 확인하는 함수
@@ -30,22 +44,23 @@
     
 </head>
 <body>
+	<h1 class="text-warning">CDB</h1>
     <!-- div 왼쪽, 오른쪽 바깥여백을 auto로 주면 중앙정렬된다.  -->
+    <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
     <div id="wrap">
-        <br><br>
         <b><font size="6" color="gray">회원가입</font></b>
-        <br><br><br>
-        
+        <br><br>
         
         <!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
         <!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 RegisterPro.jsp -->
         <form method="post" action="../pro/RegisterPro.jsp" name="userInfo" onsubmit="return checkValue()">
+            <center>
             <table>
                 <tr>
                     <td id="title">아이디</td>
                     <td>
                         <input type="text" name="id" maxlength="50">
-                        <input type="button" value="중복확인" >    
+                        <input type="button" class="btn btn-warning btn-sm" disabled value="중복확인" >    
                     </td>
                 </tr>
                         
@@ -94,7 +109,7 @@
                 </tr>
                     
                 <tr>
-                    <td id="title">휴대전화 ((-)빼고 입력)</td>
+                    <td id="title">휴대전화 </td>
                     <td>
                         <input type="text" name="phone" />
                     </td>
@@ -126,8 +141,13 @@
                     
             </table>
             <br>
-            <input type="submit" value="가입"/>  <input type="button" value="취소">
+            <input type="submit" class="btn btn-danger btn" style="width:80pt" value="가입"/>  
+            <input type="button" class="btn btn-danger btn" style="width:80pt"value="취소"
+            onclick = "location.href= '../../Main.jsp'">
+        	</center>
         </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
 </body>
 </html>
