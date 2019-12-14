@@ -34,7 +34,7 @@
       <center>
          <input type="password" style = "width:250px; height:40px;" name="input_pw"/><br><br>         
          <input type = "submit" class="btn btn-danger btn" style = "width:100pt" value="로그인"/><br>
-         <font style="position:relative;right:200px;top:30px;font-weight:;">혹시 계정이 없으신가요?</font>
+         <font style="position:relative;right:180px;top:30px;font-weight:;">*혹시 계정이 없으신가요?</font>
       </center>
       <center>
          <a href = "RegisterForm.jsp" class="btn btn-warning btn" style = "width:100pt">회원가입</a>
