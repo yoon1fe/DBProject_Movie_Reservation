@@ -7,7 +7,7 @@ public class MemberBean {
 	private String birthyy;
 	private String birthmm;
 	private String birthdd;
-	private int phone;
+	private String phone;
 	private String address;
 	private String sex;
 	
@@ -47,10 +47,10 @@ public class MemberBean {
 	public void setBirthdd(String birthdd) {
 		this.birthdd = birthdd;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getAddress() {

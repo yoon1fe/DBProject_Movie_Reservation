@@ -50,7 +50,7 @@ public class MemberDAO {
 	        pstmt.setString(2, member.getPassword());
 	        pstmt.setString(3, member.getName());
 	        pstmt.setDate(4, stringToDate(member));
-	        pstmt.setInt(5,  member.getPhone());
+	        pstmt.setString(5,  member.getPhone());
 	        pstmt.setString(6, member.getAddress());
 	        pstmt.setString(7, member.getSex());
 	         
