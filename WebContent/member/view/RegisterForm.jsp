@@ -57,7 +57,7 @@
             <center>
             <table>
                 <tr>
-                    <td id="title">아이디</td>
+                    <td id="title" style="font-weight:bold;">아이디</td>
                     <td>
                         <input type="text" name="id" maxlength="50">
                         <input type="button" class="btn btn-warning btn-sm" disabled value="중복확인" >    
@@ -65,28 +65,28 @@
                 </tr>
                         
                 <tr>
-                    <td id="title">비밀번호</td>
+                    <td id="title" style="font-weight:bold;">비밀번호</td>
                     <td>
                         <input type="password" name="password" maxlength="50">
                     </td>
                 </tr>
                 
                 <tr>
-                    <td id="title">비밀번호 확인</td>
+                    <td id="title" style="font-weight:bold;">비밀번호 확인</td>
                     <td>
                         <input type="password" name="passwordcheck" maxlength="50">
                     </td>
                 </tr>
                     
                 <tr>
-                    <td id="title">이름</td>
+                    <td id="title" style="font-weight:bold;">이름</td>
                     <td>
                         <input type="text" name="name" maxlength="50">
                     </td>
                 </tr>
                     
                 <tr>
-                    <td id="title">생일</td>
+                    <td id="title" style="font-weight:bold;">생일</td>
                     <td>
                         <input type="text" name="birthyy" maxlength="4" placeholder="년(4자)" size="6" >
                         <select name="birthmm">
@@ -109,13 +109,13 @@
                 </tr>
                     
                 <tr>
-                    <td id="title">휴대전화 </td>
+                    <td id="title" style="font-weight:bold;">휴대전화 </td>
                     <td>
                         <input type="text" name="phone" />
                     </td>
                 </tr>
                 <tr>
-                    <td id="title">지역</td>
+                    <td id="title" style="font-weight:bold;">지역</td>
                     <td>
                         <select name="address">
                         	<option value = "">도시 선택</option>
@@ -132,7 +132,7 @@
                 </tr>
                 
                 <tr>
-                    <td id="title">성별</td>
+                    <td id="title" style="font-weight:bold;">성별</td>
                     <td>
                         <input type="radio" name="sex" value="남" checked>남
                         <input type="radio" name="sex" value="여" checked>여
