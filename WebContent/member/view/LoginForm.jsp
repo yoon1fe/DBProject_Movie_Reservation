@@ -5,7 +5,7 @@
    <head>
       <meta charset="EUC-KR">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>로그인</title>
+      <title>CDB :: 로그인</title>
       <link rel="stylesheet" href="../../css/bootstrap.css">
       <style type="text/css">
         body{

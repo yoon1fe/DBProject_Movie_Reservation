@@ -16,7 +16,7 @@ public class MovieDAO {
    private int [] mid = new int [100]  ;
    private String [] title = new String [100];
    private Blob [] poster = new Blob[100];
-   private byte[][] imgData = new byte[100][9000000]; //10편만 넣자
+   private byte[][] imgData = new byte[20][10000000]; //10편만 넣자
    private String [] grade = new String [100];
    private int [] score = new int [100];
    private String []director = new String [100];
@@ -91,7 +91,7 @@ public class MovieDAO {
    }
 
    public String getTitle(int movieNum) {
-      return  title[movieCount];
+      return  title[movieNum];
    }
 
    public byte[] getPoster(int movieNum) {

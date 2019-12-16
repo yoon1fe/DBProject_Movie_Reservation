@@ -1,81 +1,90 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR" import = "jsp.member.model.*" import = "java.io.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import = "jsp.member.model.*" import = "java.io.*"%>
+<%@ page import="jsp.member.model.MovieDAO" %> 
+<%@ page import="java.io.*" %> 
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="EUC-KR">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome to CDB !</title>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<style type="text/css">
-        	body{
-            	background-color: #e6dfc0;
-        	}
-        	h1{
-        		text-shadow:-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
-        	}
-        	#div1{
-        		position:relative;
-            	background-color: #dc3232;
-            	padding: 10px;
-            	top:8px;
-        	}
-        	#div2{
-        		position:relative;
-        		top:15px;
-        	}
-    	</style>
-	</head>
-	<body>
-		<div style="float:left;">
-		<h1 class="text-warning">CDB</h1>
-		</div>
-		
-		<div id="div2" style="float:right;">
-		<%
+   <head>
+      <meta charset="EUC-KR">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Welcome to CDB !</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <style type="text/css">
+           body{
+               background-color: #e6dfc0;
+           }
+           h1{
+              text-shadow:-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+           }
+           #div1{
+              position:relative;
+               background-color: #dc3232;
+               padding: 10px;
+               top:8px;
+           }
+           #div2{
+              position:relative;
+              top:15px;
+           }
+       </style>
+   </head>
+   <body>
+      <div style="float:left;">
+      <h1 class="text-warning">CDB</h1>
+      </div>
+      
+      <div id="div2" style="float:right;">
+      <%
 
-			if((String)session.getAttribute("cid") == null){		//∑Œ±◊¿Œ «œ±‚ ¿¸
-				%>
-				<a href = "member/view/LoginForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">∑Œ±◊¿Œ</a>
-				<a href = "member/view/RegisterForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">»∏ø¯∞°¿‘</a>
-				<%
-			}
-		
-			else{												//∑Œ±◊¿Œ µ 
-				%>
-				<a href = "member/pro/Logout.jsp" class="btn btn-danger btn-sm" style = "width:70pt">∑Œ±◊æ∆øÙ</a>
-				<%
-			}
-			%>
-		
-		<a href = "" class="btn btn-danger btn-sm" style = "width:70pt">∏∂¿Ã∆‰¿Ã¡ˆ</a>
-		</div><br><br>
-		
-		<div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>		
-		
-		
-		
-		<% 
-		
-       MovieDAO mv= new MovieDAO();
-       mv.select_init_movie();
-       byte[] temp = null;
-       temp = mv.getPoster(0);
-       System.out.println(temp);
-     /*   response.setContentType("image/jpeg");
-         ServletOutputStream o = response.getOutputStream();
-         o.write(mv.getPoster(0));
-         o.flush();
-         o.close();
-         */
+         if((String)session.getAttribute("cid") == null){      //Î°úÍ∑∏Ïù∏ ÌïòÍ∏∞ Ï†Ñ
+            %>
+            <a href = "member/view/LoginForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">Î°úÍ∑∏Ïù∏</a>
+            <a href = "member/view/RegisterForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">ÌöåÏõêÍ∞ÄÏûÖ</a>
+            <%
+         }
+      
+         else{                                    //Î°úÍ∑∏Ïù∏ Îê®
+            %>
+            <a href = "member/pro/Logout.jsp" class="btn btn-danger btn-sm" style = "width:70pt">Î°úÍ∑∏ÏïÑÏõÉ</a>
+            <a href = "member/view/Mypage.jsp" class="btn btn-danger btn-sm" style = "width:70pt">ÎßàÏù¥ÌéòÏù¥ÏßÄ</a>
+            <%
+         }
          %>
+      
+      
+      </div><br><br>
+      
+      <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>      
+      
     <br>
     <br>
     <br> 
     <br>
-	<img src ="poster/POSTER_FROZEN.jpg" width="200"/>
-	</br>
-	</body>
+    <div><center>
+    <script type="text/javascript">
+    
+    function newWindow1(){
+    	window.open("member/view/MovieInfo1.jsp", "new", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    }
+    function newWindow2(){
+    	window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    }
+    function newWindow3(){
+    	window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    }
+    
+    </script>
+    <img src ="ImageServlet?req=0" width="200" onClick="newWindow1()"; style="cursor:pointer"/>  
+    <img src ="ImageServlet?req=1" width="200" onClick="newWindow2()"; style="cursor:pointer"/>  
+    <img src ="ImageServlet?req=2" width="200" onClick="newWindow3()"; style="cursor:pointer"/> </pre>
+    
+    
+    </center>
+    </div>
+    
+   </br>
+   </body>
 </html>

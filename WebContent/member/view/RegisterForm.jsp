@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="EUC-KR">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CDB 회원가입</title>
+		<title>CDB :: 회원가입</title>
 		<link rel="stylesheet" href="../../css/bootstrap.css">
 		<style type="text/css">
         	body{
