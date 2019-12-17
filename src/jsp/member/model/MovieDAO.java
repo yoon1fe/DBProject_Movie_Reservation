@@ -124,7 +124,9 @@ public class MovieDAO {
    public String getGenre(int movieNum) {
       return genre[movieNum];
    }
-   
+   public int getMovieCount() {
+	   return movieCount;
+   }
 
    
 }
