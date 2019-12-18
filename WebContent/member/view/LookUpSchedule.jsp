@@ -82,9 +82,9 @@
 	
 	<center>
 	<table>
-	<th style="font-size:25px">상영시간표</th>
-	<th style="font-size:25px">좌석 선택</th>
-	<tr>
+   <th style="font-size:25px">상영시간표</th>
+   <th style="font-size:25px">좌석 선택</th>
+   <tr>
    
    <td>
    <form method="post" action="lookUpSeat.jsp" name="info" onsubmit="return checkValue()">
