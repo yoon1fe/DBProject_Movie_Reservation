@@ -67,13 +67,13 @@
     <script type="text/javascript">
     
     function newWindow1(){
-    	window.open("member/view/MovieInfo1.jsp", "new", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    	window.open("member/view/MovieInfo1.jsp", "new", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     function newWindow2(){
-    	window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    	window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     function newWindow3(){
-    	window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+    	window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     
     </script>
