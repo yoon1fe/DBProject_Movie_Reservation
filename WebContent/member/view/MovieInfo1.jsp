@@ -93,15 +93,15 @@
            </tr>
            <td style="font-weight:bold; font-size:20px;"> <%=grade %> 세 관람가</td>
            </tr>
-           <td style="font-weight:bold; font-size:20px;">박스오피스 순위 : <%=score %></td>
+           <td style="font-weight:bold; font-size:20px;">박스오피스 순위 : <%=score %>위</td>
            </tr>
            <td style="font-weight:bold; font-size:20px;">감독 : <%=director %></td>
            </tr>
            <td style="font-weight:bold; font-size:20px;">출연 배우 : <%=actor %></td>
            </tr>
-           <td style="font-weight:bold; font-size:20px;">상영 시간 : <%=runningTime%></td>
+           <td style="font-weight:bold; font-size:20px;">상영 시간 : <%=runningTime%>분</td>
            </tr>
-           <td style="font-weight:bold; font-size:20px;">관객수 : <%=moviegoers %></td>
+           <td style="font-weight:bold; font-size:20px;">관객수 : <%=moviegoers %>명</td>
            </tr>
            </tr>
        </table>
