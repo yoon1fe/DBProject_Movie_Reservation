@@ -24,7 +24,7 @@ public class ScreeningDAO {
    public void select_init_screening() throws SQLException {
       
       Connection conn = null;
-         Statement stmt = null;
+      Statement stmt = null;
           int flag = 0;
          try {
             conn = DBConnection.getConnection();
