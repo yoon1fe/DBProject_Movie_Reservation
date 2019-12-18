@@ -22,7 +22,9 @@
    </head>
    
    <body>
+   <div OnClick="location.href='../../Main.jsp'" style="cursor:pointer">
    <h1 class="text-warning">CDB</h1>
+   </div>
    <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
       <b><font size="6" color="gray">·Î±×ÀÎ</font></b><br><br>
       <form method="post" action="../pro/LoginPro.jsp">

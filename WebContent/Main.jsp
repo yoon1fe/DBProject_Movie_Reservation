@@ -30,7 +30,7 @@
        </style>
    </head>
    <body>
-      <div style="float:left;">
+      <div OnClick="window.location.reload()"; style="float:left; cursor:pointer;">
       <h1 class="text-warning">CDB</h1>
       </div>
       
@@ -47,16 +47,16 @@
          else{                                    //로그인 됨
             %>
             <a href = "member/pro/Logout.jsp" class="btn btn-danger btn-sm" style = "width:70pt">로그아웃</a>
-            <a href = "member/view/Mypage.jsp" class="btn btn-danger btn-sm" style = "width:70pt">마이페이지</a>
+            <a href = "member/view/ReservationList.jsp" class="btn btn-danger btn-sm" style = "width:70pt">마이페이지</a>
             <%
          }
          %>
       
       
       </div>
-      <br>
-      <br>
       
+         <br>
+         <br>
       <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>      
@@ -66,11 +66,12 @@
     a:link{color:red; text-decoration: none;}
     a:visited{color: black; text-decoration: none;}
     a:hover{color:bluel text-decoration:underline;} </style>
-      <b> <a href = "member/view/ReservationForm.jsp">예매</a>   </b>
+      <b> <a href = "member/view/ReservationForm.jsp">예매</a></b>
    
     </pre>
     <br>
     <br>
+    
     <br> 
     <br>
     <div><center>
@@ -78,7 +79,7 @@
 
     <script type="text/javascript">    
     function newWindow1(){
-       window.open("member/view/MovieInfo1.jsp", "new", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+       window.open("member/view/MovieInfo1.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     function newWindow2(){
        window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
@@ -86,11 +87,24 @@
     function newWindow3(){
        window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
+    function newWindow4(){
+        window.open("member/view/MovieInfo4.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+     }
+    function newWindow5(){
+        window.open("member/view/MovieInfo5.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+     }
+    function newWindow6(){
+        window.open("member/view/MovieInfo6.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+     }
     
     </script>
-    <img src ="ImageServlet?req=0" width="200" onClick="newWindow1()"; style="cursor:pointer"/>  
-    <img src ="ImageServlet?req=1" width="200" onClick="newWindow2()"; style="cursor:pointer"/>  
-    <img src ="ImageServlet?req=2" width="200" onClick="newWindow3()"; style="cursor:pointer"/> </pre>
+    <img src ="ImageServlet?req=0" width="200" onClick="newWindow1()"; style="cursor:pointer; margin-right:20px; margin-bottom:50px"/>  
+    <img src ="ImageServlet?req=1" width="200" onClick="newWindow2()"; style="cursor:pointer; margin-right:20px; margin-bottom:50px"/>  
+    <img src ="ImageServlet?req=2" width="200" onClick="newWindow3()"; style="cursor:pointer; margin-bottom:50px"/> 
+    <br>
+    <img src ="ImageServlet?req=3" width="200" onClick="newWindow4()"; style="cursor:pointer; margin-right:20px"/>
+    <img src ="ImageServlet?req=4" width="200" onClick="newWindow5()"; style="cursor:pointer; margin-right:20px"/>
+    <img src ="ImageServlet?req=5" width="200" onClick="newWindow6()"; style="cursor:pointer"/></pre>
     
     
     </center>

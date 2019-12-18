@@ -4,6 +4,19 @@
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="jsp.member.model.*"%>
+<%@ page import="jsp.member.model.MovieDAO" %> 
+<%@ page import="java.io.*" %> 
+
+<% 
+String cid = (String)session.getAttribute("cid");
+String cname = (String)session.getAttribute("cname");
+
+if(cid == null){
+	out.println("<script>");
+	out.println("alert('로그인을 해주세요'); location.href='../view/LoginForm.jsp';");
+	out.println("</script>");
+}
+%>
 <!DOCTYPE html>
 <html>
 
@@ -51,26 +64,12 @@
 
 </head>
 <body>
-<div style="float:left;">
+<div OnClick="location.href='../../Main.jsp'"; style="float:left; cursor:pointer;">
+
     <h1 class="text-warning">CDB</h1>
 </div>
 <div id="div2" style="float:right;">
-      <%
 
-         if((String)session.getAttribute("cid") == null){   
-            %>
-            <a href = "member/view/LoginForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">로그인</a>
-            <a href = "member/view/RegisterForm.jsp" class="btn btn-danger btn-sm" style = "width:70pt">회원가입</a>
-            <%
-         }
-      
-         else{                                    
-            %>
-            <a href = "member/pro/Logout.jsp" class="btn btn-danger btn-sm" style = "width:70pt">로그아웃</a>
-            <a href = "member/view/Mypage.jsp" class="btn btn-danger btn-sm" style = "width:70pt">마이페이지</a>
-            <%
-         }
-         %>
    </div><br><br>
    <%
    int mvCount;

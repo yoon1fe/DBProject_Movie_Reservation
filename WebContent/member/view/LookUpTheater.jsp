@@ -12,7 +12,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CDB :: 극장</title>
+<title>CDB :: 극장 선택</title>
 <link rel="stylesheet" href="../../css/bootstrap.css">
       <style type="text/css">
         body{

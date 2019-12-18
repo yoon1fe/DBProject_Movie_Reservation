@@ -5,7 +5,7 @@
    <head>
       <meta charset="EUC-KR">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>CDB :: 어벤져스 엔드게임</title>
+      <title>CDB :: 기생충</title>
       <link rel="stylesheet" href="../../css/bootstrap.css">
        <style type="text/css">
            body{
@@ -58,7 +58,7 @@
 
       Statement stmt = conn.createStatement();
       
-      sql = "select * from movie where mid = 3";
+      sql = "select * from movie where mid = 4";
       ResultSet rs = stmt.executeQuery(sql);
       while(rs.next()){
          title = rs.getString(2);
@@ -86,7 +86,7 @@
    <center>
        <table>
            <tr>
-               <img src ="../../ImageServlet?req=2" width="200" />
+               <img src ="../../ImageServlet?req=3" width="200" />
                <td style="font-weight:bold; font-size:20px;">제목 : <%=title %></td>
            </tr>
            <td style="font-weight:bold; font-size:20px;">장르 : <%=genre %></td>

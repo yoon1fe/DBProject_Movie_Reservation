@@ -32,7 +32,11 @@ String sex = (String)session.getAttribute("sex");
    </head>
    
    <body>
+   <div OnClick="window.location.reload()"; style="float:left; cursor:pointer;">
    <h1 class="text-warning">CDB</h1>
+   </div>
+   <br>
+   <br>
    <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
     <b><font size="6" color="gray">마이페이지</font></b><br><br>
    <center>

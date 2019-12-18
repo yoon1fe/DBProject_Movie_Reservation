@@ -44,7 +44,11 @@
     
 </head>
 <body>
+<div OnClick="location.href='../../Main.jsp'"; style="float:left; cursor:pointer;">
 	<h1 class="text-warning">CDB</h1>
+	</div>
+	<br>
+	<br>
     <!-- div 왼쪽, 오른쪽 바깥여백을 auto로 주면 중앙정렬된다.  -->
     <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
     <div id="wrap">
