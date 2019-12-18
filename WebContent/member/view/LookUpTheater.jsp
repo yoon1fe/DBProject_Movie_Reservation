@@ -68,13 +68,14 @@
 	<tr>
 	
 	<td>
-	<form method="post" action="LookUpSchedule.jsp" name="info" onsubmit="return checkValue()">
+	<form method="post" action="lookUpSchedule.jsp" name="info" onsubmit="return checkValue()">
 		<select name="theaterName"  style="width:110px;height:35px">
 			<option value="">영화관선택</option>
     		<%  for(int i = 0; i < thList.size(); i++) {
            	String option = (String)thList.get(i);
+           	String value = Integer.toString(th.getTid(i));
    			%>
-   			<option value="<%= option %>"><%= option %></option>
+   			<option value="<%= value %>"><%= option %></option>
    			<% } %>
     	</select>
     
