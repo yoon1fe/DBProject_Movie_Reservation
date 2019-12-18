@@ -45,11 +45,13 @@
 	<div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
 	<b><font size="6" color="gray">상영시간 선택</font></b><br>
 	
-	<select name="theaterName">
+	<center>
+	<select name="theaterName"  style="width:100px;height:35px">
 	<option value="<%= thName %>"><%= thName %></option>
 	<option value="<%= mvName %>"><%= mvName %></option>
 	<option value="<%= address %>"><%= address %></option>
 	</select>
+	</center>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.js"></script>

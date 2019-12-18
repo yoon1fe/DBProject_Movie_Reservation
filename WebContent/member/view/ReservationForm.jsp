@@ -84,14 +84,15 @@
    %>
    <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
    <b><font size="6" color="gray">예매</font></b><br>
+   <center>
    <table>
-   <th>영화</th>
-   <th>지역</th>
-   <th>영화시간표 검색</th>
+   <th style="font-size:25px">영화</th>
+   <th style="font-size:25px">지역</th>
+   <th style="font-size:25px">영화관 검색</th>
    <tr>
    <td>
    <form method="post" action="LookUpTheater.jsp" name="info" onsubmit="return checkValue()">
-   <select name="movieName">
+   <select name="movieName"  style="width:100px;height:30px">
    <option value="">영화선택</option>
       <%  for(int i = 0; i < al.size(); i++) {
            String option = (String)al.get(i);
@@ -101,7 +102,7 @@
     </select>
     </td>
     <td>
-    <select name="address">
+    <select name="address" style="width:100px;height:30px">
                            <option value = "">도시 선택</option>
                            <option>서울</option>
                            <option>인천</option>
@@ -115,11 +116,12 @@
     </td>
     <td>
     
- <input type = "submit" class="btn btn-danger btn-sm" style = "width:100pt" value="영화관확인"/><br>
+ <input type = "submit" class="btn btn-danger btn-sm" style = "width:100pt" value="영화관 확인"/><br>
     </td>
     </form>
     </tr>
    </table>
+   </center>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script type="text/javascript" src="../../js/bootstrap.js"></script>
    
