@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import = "jsp.member.model.*" import = "java.io.*"%>
+<%@ page import="jsp.member.model.MovieDAO" %> 
 <%@ page import="java.io.*" %> 
 
 <!DOCTYPE html>
@@ -52,27 +53,38 @@
          %>
       
       
-      </div><br><br>
+      </div>
+      <br>
+      <br>
       
       <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>      
       
+    <pre>
+    <style type = "text/css">
+    a:link{color:red; text-decoration: none;}
+    a:visited{color: black; text-decoration: none;}
+    a:hover{color:bluel text-decoration:underline;} </style>
+      <b> <a href = "member/view/ReservationForm.jsp">예매</a>   </b>
+   
+    </pre>
     <br>
     <br>
     <br> 
     <br>
     <div><center>
-    <script type="text/javascript">
-    
+
+
+    <script type="text/javascript">    
     function newWindow1(){
-    	window.open("member/view/MovieInfo1.jsp", "new", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+       window.open("member/view/MovieInfo1.jsp", "new", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     function newWindow2(){
-    	window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+       window.open("member/view/MovieInfo2.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     function newWindow3(){
-    	window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
+       window.open("member/view/MovieInfo3.jsp", "MsgWindow", "width=300, height=620, left=30, top=30, resizable=no, scrollbars=yes, titlebar=no, fullscreen=no");
     }
     
     </script>

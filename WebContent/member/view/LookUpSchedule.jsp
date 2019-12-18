@@ -87,7 +87,7 @@
    <tr>
    
    <td>
-   <form method="post" action="lookUpSeat.jsp" name="info" onsubmit="return checkValue()">
+   <form method="post" action="LookUpSeat.jsp" name="info" onsubmit="return checkValue()">
    <select name="theaterName" style="width:550px;height:35px">
    <option value="">상영시간표선택</option>
    <%  for(int i = 0; i < totalSeat.size(); i++) {

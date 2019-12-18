@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="java.sql.Connection"%>
-<%@page import="import java.sql.DriverManager%>
-<%@page import="import java.sql.SQLException%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.SQLException"%>
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="jsp.member.model.*"%>

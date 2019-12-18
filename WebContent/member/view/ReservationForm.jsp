@@ -36,12 +36,12 @@
         function checkValue()
         {
             if(!document.info.movieName.value){
-                alert("영화이름을 입력하세요.");
+                alert("영화를 선택하세요.");
                 return false;
             }
             
             if(!document.info.address.value){
-                alert("위치를 입력하세요.");
+                alert("위치를 선택하세요.");
                 return false;
             }
            
@@ -91,7 +91,7 @@
    <th style="font-size:25px">영화관 검색</th>
    <tr>
    <td>
-   <form method="post" action="lookUpTheater.jsp" name="info" onsubmit="return checkValue()">
+   <form method="post" action="LookUpTheater.jsp" name="info" onsubmit="return checkValue()">
    <select name="movieName"  style="width:100px;height:30px">
    <option value="">영화선택</option>
       <%  for(int i = 0; i < al.size(); i++) {
