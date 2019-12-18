@@ -86,7 +86,7 @@
    <center>
        <table>
            <tr>
-               <img src ="../../ImageServlet?req=0" width="200" />
+               <img src ="../../ImageServlet?req=1" width="200" />
                <td style="font-weight:bold; font-size:20px;">제목 : <%=title %></td>
            </tr>
            <td style="font-weight:bold; font-size:20px;">장르 : <%=genre %></td>
