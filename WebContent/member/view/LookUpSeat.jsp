@@ -13,7 +13,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CDB :: 좌석 서택</title>
+<link rel="stylesheet" href="../../css/bootstrap.css">
+      <style type="text/css">
+        body{
+            background-color: #e6dfc0;
+        }
+        h1{
+           text-shadow:-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+        }
+        #div1{
+            background-color: #dc3232;
+            padding: 10px;
+        }
+    </style>
 
 <script>
 function trans_fer() {
@@ -92,7 +106,11 @@ function trans_fer() {
          System.out.println(string_ScingID+"  "+ Integer.toString(Seat_count)+"  "+Integer.toString(sc.getSid(cur_sc))+"  "+Integer.toString(Seat_no[0]));
               
        %>
+        <h1 class="text-warning">CDB</h1>
+   		<div id="div1" style="height: auto; width: 100%; border:1px solid black;">
+   		</div><b><font size="6" color="gray">좌석 선택</font></b><br>
        <form name="sub1" method="post" action="../pro/ReservationPro.jsp">
+       <center>
        <%
       for (int i=0;i<20;i++) {
       %>
@@ -104,17 +122,20 @@ function trans_fer() {
          int verify=0;
          for(int j=0;j<Seat_count;j++){ %>
             <%if(Seat_no[j]==i){verify=1; %>
-               <text style='background-color:red;'><%=i %></text>
+            <button name ="seat_no" value ="<%=i %>" style="width:100px;height:50px; background-color:#FF0000;cursor:default"><%=i %></button>
             <%}%>
          <%} %>
          
          <%if (verify==0){ %>
-               <button name ="seat_no" value ="<%=i %>" onclick="trans_fer()"><%=i %></button>
+               <button name ="seat_no" value ="<%=i %>" onclick="trans_fer()" style="width:100px;height:50px"><%=i %></button>
                <%} %>
       </td>
       </tr>
        <input type="hidden" name="sngid" value="<%=string_ScingID%>" />
       <% } %>
+      </center>
       </form>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="../../js/bootstrap.js"></script>
 </body>
 </html>

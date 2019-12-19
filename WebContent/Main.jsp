@@ -61,21 +61,14 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>      
       
-    <pre>
-    <style type = "text/css">
-    a:link{color:red; text-decoration: none;}
-    a:visited{color: black; text-decoration: none;}
-    a:hover{color:bluel text-decoration:underline;} </style>
-      <b> <a href = "member/view/ReservationForm.jsp">예매</a></b>
-   
-    </pre>
-    <br>
-    <br>
-    
-    <br> 
-    <br>
-    <div><center>
 
+      <b> <a href = "member/view/ReservationForm.jsp"><font size="20px" color="orange">예매</a></b>
+      
+         
+   
+    <div><center>
+    <font color="black">
+	<p sytle="text-align:center; font-size:48px">현재상영중</p>
 
     <script type="text/javascript">    
     function newWindow1(){

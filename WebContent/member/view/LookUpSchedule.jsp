@@ -7,7 +7,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CDB :: 상영시간 선택</title>
+<link rel="stylesheet" href="../../css/bootstrap.css">
+      <style type="text/css">
+        body{
+            background-color: #e6dfc0;
+        }
+        h1{
+           text-shadow:-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+        }
+        #div1{
+            background-color: #dc3232;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
    <% 
@@ -63,14 +77,18 @@
    }
    
    %>
+   <h1 class="text-warning">CDB</h1>
+   <div id="div1" style="height: auto; width: 100%; border:1px solid black;"></div>
+   <b><font size="6" color="gray">상영시간 선택</font></b><br>
+   <center>
    <table>
-   <th>상영시간표</th>
-   <th>좌석 선택</th>
+   <th style="font-size:25px">상영시간표</th>
+   <th style="font-size:25px">좌석 선택</th>
    <tr>
    
    <td>
    <form method="post" action="LookUpSeat.jsp" name="info" onsubmit="return checkValue()">
-   <select name="ScreeningName">
+   <select name="ScreeningName" style="width:600px;height:35px">
    <option value="">상영시간표선택</option>
    <%  for(int i = 0; i < totalSeat.size(); i++) {
          String movieName=mvName;
@@ -80,7 +98,7 @@
            String notReserve=Integer.toString(Integer.parseInt((String)totalSeat.get(i))-Integer.parseInt((String)reservedSeat.get(i)));
             String SidList=(String)screeningID.get(i);
    %>      
-   <option value="<%= SidList %>">  영화이름=  <%= mvName %>  상영관 번호=  <%= screenNumber %>  상영시간=  ㄹㄹㄹㄹ  남은좌석=  <%= notReserve %>/<%= totalseat %></option>
+   <option value="<%= SidList %>">  영화이름=  <%= mvName %>  상영관 번호=  <%= screenNumber %>  상영시간=  2019-12-19 남은좌석=  <%= notReserve %>/<%= totalseat %></option>
    <% } %>
    </select>
     </td>
@@ -93,5 +111,8 @@
     </tr>
     
    </table>
+   </center>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script type="text/javascript" src="../../js/bootstrap.js"></script>
 </body>
 </html>
